@@ -1,6 +1,6 @@
 
 
-module.exports.jsonCompare = (obj1, ob2) =>{
+module.exports.jsonCompare = (obj1, obj2) =>{
     if(Object.keys(obj1).length==Object.keys(obj2).length){
         for(var key in obj1){
             if(obj2[key]==undefined){
@@ -8,7 +8,7 @@ module.exports.jsonCompare = (obj1, ob2) =>{
             }
             else{
                 if(typeof(obj2[key])=="object"){
-                    if(!compareObjects(obj1[key], obj2[key]))
+                    if(!this.jsonCompare(obj1[key], obj2[key]))
                         return false
                 }
                 else{

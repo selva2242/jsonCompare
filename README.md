@@ -8,12 +8,18 @@ OutPut: boolean value
 
 example:
 
-obj1 = {"a":1, "b":{"c":1, "d":1 }}
-obj2 = { "b":{"d":1, "c":1 }, "a":1}
+const {jsonCompare} = require('json_comparision')
+
+const obj1 = {"a":1, "b":{"c":1, "d":1 }} 
+const obj2 = { "b":{"d":1, "c":1 }, "a":1}
 
 jsonCompare(obj1,obj2) will return true
 
-obj1 = {"a":1, "b":{"c":1, "d":1 }}
-obj2 = { "b":{"d":2, "c":1 }, "a":1}
+const {jsonCompare} = require('json_comparision')
+
+const obj1 = {"a":1, "b":{"c":1, "d":1 }} 
+const obj2 = { "b":{"d":2, "c":1 }, "a":1}
 
 jsonCompare(obj1,obj2) will return false
+
+

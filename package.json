@@ -1,6 +1,6 @@
 {
   "name": "json_comparision",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Compare two jsons",
   "main": "index.js",
   "scripts": {
