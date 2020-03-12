@@ -1,0 +1,16 @@
+{
+  "name": "jsoncompare",
+  "version": "1.0.0",
+  "description": "Compare two jsons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "jsonCompare",
+    "objectCompare"
+  ],
+  "author": "Selvakumar",
+  "license": "ISC"
+}
