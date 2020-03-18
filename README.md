@@ -10,15 +10,17 @@ const {jsonCompare} = require('json_comparision')
 const obj1 = {"a":1, "b":{"c":1, "d":1 }} 
 const obj2 = { "b":{"d":1, "c":1 }, "a":1}
 
->>__jsonCompare(obj1,obj2)__ 
->>__true__
+__jsonCompare(obj1,obj2)__ 
+
+__true__
 
 const {jsonCompare} = require('json_comparision')
 
 const obj1 = {"a":1, "b":{"c":1, "d":1 }} 
 const obj2 = { "b":{"d":2, "c":1 }, "a":1}
 
->>__jsonCompare(obj1,obj2)__
->>__false__
+__jsonCompare(obj1,obj2)__
+
+__false__
 
 
